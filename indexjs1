@@ -20,5 +20,4 @@ var app = {
 	if(networkState == Connection.NONE)
 		navigator.notification.alert(networkState, this.exitApp, "Network Error", "Exit");
 	else
-		var ref = cordova.InAppBrowser.open("
-
+		var ref = cordova.InAppBrowser.open(" 
