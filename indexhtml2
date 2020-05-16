@@ -1,0 +1,14 @@
+</title>
+</head>
+<body>
+    <div class="app">
+        <h1>This app is brought to you by APK-Gen</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Service</p>
+            <p class="event received">Press Back to Exit</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

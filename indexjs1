@@ -1,0 +1,23 @@
+var app = {
+    // Application Constructor
+    initialize: function() {
+        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+    },
+
+    // deviceready Event Handler
+    //
+    // Bind any cordova events here. Common events are:
+    // 'pause', 'resume', etc.
+
+    exitApp: function() {
+	cordova.plugins.exit();
+    },
+
+    onDeviceReady: function() {
+        this.receivedEvent('deviceready');
+	window.open = cordova.InAppBrowser.open;
+	var networkState = navigator.connection.type;
+	if(networkState == Connection.NONE)
+		navigator.notification.alert(networkState, this.exitApp, "Network Error", "Exit");
+	else
+		var ref = cordova.InAppBrowser.open("
