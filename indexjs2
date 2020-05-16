@@ -1,4 +1,4 @@
-","_blank", "location=no");
+","_blank", "location=no,zoom=no,toolbar=no");
     },
 
     // Update DOM on a Received Event
